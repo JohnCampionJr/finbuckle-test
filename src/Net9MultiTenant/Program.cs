@@ -1,4 +1,4 @@
-﻿using Finbuckle.MultiTenant;
+using Finbuckle.MultiTenant;
 using Finbuckle.MultiTenant.EntityFrameworkCore.Stores.EFCoreStore;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -44,6 +44,7 @@ app.UseHttpsRedirection();
 
 // add the Finbuckle.MultiTenant middleware
 app.UseMultiTenant();
+app.UseAuthentication();
 
 app.UseRouting();
 
